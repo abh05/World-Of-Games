@@ -1,7 +1,8 @@
 AS A Part OF DevOps Training , Created World Of Games project which will demonstrate 3 interactive games
+
 1.CurrencyRouletteGame
 
-2.MemoryGame
+2.GuessGame
 
 3.MemoryGame
 
