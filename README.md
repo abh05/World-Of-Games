@@ -8,4 +8,4 @@ AS A Part OF DevOps Training , Created World Of Games project which will demonst
 
 All implemnted with Pyton and will be managed and tested with integration between jenkins and git. 
 
-Enjoy.
+Run MainGame.py and Enjoy.
