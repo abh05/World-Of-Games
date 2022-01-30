@@ -1,14 +1,18 @@
-# World Of Games
-Welcone to World Of Games (WOG) :)
+## Table of contents
+* [General info](#general-info)
+* [Technologies](#technologies)
+* [Setup](#setup)
 
-AS A Part OF DevOps Training ,i Developed World Of Games project which demonstrate 3 interactive games:
-
-1.CurrencyRouletteGame
-
-2.GuessGame
-
-3.MemoryGame
-
-All implemnted with Pyton and will be managed and tested with integration between jenkins and git. 
-
-Run MainGame.py and Enjoy.
+## General info
+This project is a Part OF DevOps course which i have developed 'World Of Games' project which demonstrate 3 interactive games:
+*CurrencyRouletteGame
+*GuessGame
+*MemoryGame
+	
+## Technologies
+Project is created with:
+* Python 3.10
+	
+## Setup
+To run this project, install it locally and Run:
+$ MainGame.py
