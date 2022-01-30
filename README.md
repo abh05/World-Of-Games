@@ -1,5 +1,6 @@
 ## Table of contents
-* [General info](#general-info)
+* [Introduction](#Introduction)
+* [Demo](#Demo)
 * [Technologies](#technologies)
 * [Setup](#setup)
 
