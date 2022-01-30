@@ -20,4 +20,4 @@ To run this project, install it locally and Run:
 $ MainGame.py
 
 
-Enjoy :simple_smile:
+Enjoy :smile: 
