@@ -1,4 +1,5 @@
-AS A Part OF DevOps Training , Created World Of Games project which will demonstrate 3 interactive games:
+Welcone to World Of Games (WOG) :)
+AS A Part OF DevOps Training ,i Developed World Of Games project which demonstrate 3 interactive games:
 
 1.CurrencyRouletteGame
 
