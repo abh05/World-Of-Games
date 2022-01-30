@@ -19,7 +19,7 @@ Project is created with:
 * Python 3.10
 	
 ## Setup
-To run this project, Download it locally and Run:
+To run this project, Download it locally to your Pycharm IDE and Run:
 
 $ MainGame.py
 
