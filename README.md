@@ -9,6 +9,9 @@
 guess it back
 * Guess Game - guess a number and see if you chose like the computer
 * Currency Roulette - try and guess the value of a random amount of USD in ILS
+
+## Demo
+![Alt text](Demo.gif) / ![](Demo.gif)
 	
 ## Technologies
 Project is created with:
