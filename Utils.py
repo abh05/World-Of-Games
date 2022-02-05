@@ -1,7 +1,7 @@
 import os
+from pathlib import Path
 
-
-SCORES_FILE_NAME = "C:/Users/avi/PycharmProjects/WorldOfGames/Score.txt"
+SCORES_FILE_NAME = Path("Score/Score.txt")
 BAD_RETURN_CODE = -1
 
 
