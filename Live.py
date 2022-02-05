@@ -1,7 +1,5 @@
-import GuessGame
-import MemoryGame
-import CurrencyRouletteGame
-import Score
+from Games import GuessGame, CurrencyRouletteGame, MemoryGame
+from Score import Score
 
 
 def welcome(name):
