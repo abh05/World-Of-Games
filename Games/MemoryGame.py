@@ -1,9 +1,4 @@
-import os
-import collections
 import time
-from turtle import clear
-
-# from Live import load_game
 import random
 
 
