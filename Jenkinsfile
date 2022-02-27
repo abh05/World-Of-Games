@@ -7,7 +7,7 @@ pipeline {
                 git 'https://github.com/abh05/World-Of-Games.git'
             }
         }
-        stage('Build') {
+        stage('Build and Run') {
             steps {
                 bat 'docker-compose up'
             }
