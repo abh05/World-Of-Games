@@ -2,10 +2,10 @@ from Games import GuessGame, CurrencyRouletteGame, MemoryGame
 from Score import Score
 
 
-def welcome(name):
-    welcome_message = f"Hello {name} and welcome to the World of Games (WoG).\n" \
-                      "Here you can find many cool games to play."
-    return welcome_message
+# def welcome(name):
+#     welcome_message = f"Hello {name} and welcome to the World of Games (WoG).\n" \
+#                       "Here you can find many cool games to play."
+#     return welcome_message
 
 def load_game():
 
