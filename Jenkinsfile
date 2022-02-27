@@ -7,9 +7,19 @@ pipeline {
                 git 'https://github.com/abh05/World-Of-Games.git'
             }
         }
-                stage('Build') {
+        stage('Build') {
             steps {
                 bat 'docker-compose up'
+            }
+        }
+        stage('Test') {
+            steps {
+                bat python 'e2e.py'
+            }
+        }
+        stage('Finalize') {
+            steps {
+                bat python 'docker-compose down'
             }
         }
     }
