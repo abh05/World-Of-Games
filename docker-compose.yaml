@@ -6,4 +6,4 @@ services:
     ports:
       - '8777:40000'
     volumes:
-      - ./:/app/
+      - ./Score/:/app/
