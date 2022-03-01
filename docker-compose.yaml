@@ -2,8 +2,8 @@ version: '3'
 services:
   flask-app:
     build:
-      context: .
+      context: ./Score/
     ports:
       - '8777:40000'
     volumes:
-      - . :/app/
+      - ./Score/:/app/
