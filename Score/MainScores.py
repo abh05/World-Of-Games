@@ -17,4 +17,4 @@ def score_server():
         return render_template("ErrorF.html", ERROR=error)
 
 
-app.run(port=40000, debug=True)
+app.run(port=40000, debug=True, host='0.0.0.0')
