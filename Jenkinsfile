@@ -9,12 +9,12 @@ pipeline {
         }
         stage('Build and Run') {
             steps {
-                bat 'docker-compose up'
+                sh 'docker-compose up -d'
             }
         }
         stage('Test') {
             steps {
-                bat python 'e2e.py'
+                sh 'e2e.py'
             }
         }
         stage('Finalize') {
