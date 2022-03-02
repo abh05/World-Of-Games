@@ -1,4 +1,4 @@
 FROM python:alpine
 Run pip install flask
-WORKDIR '/app/'
-CMD pythonn ./Score/MainScores.py
+WORKDIR '/app/Score/'
+CMD python MainScores.py
