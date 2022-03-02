@@ -9,17 +9,12 @@ pipeline {
         }
         stage('Build and Run') {
             steps {
-                sh 'docker-compose up -d'
+                sh 'sudo docker-compose up '
             }
         }
-        stage('Test') {
+           stage('Test') {
             steps {
-                sh 'e2e.py'
-            }
-        }
-        stage('Finalize') {
-            steps {
-                bat python 'docker-compose down'
+                sh 'echo a'
             }
         }
     }
