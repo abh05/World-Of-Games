@@ -5,5 +5,4 @@ services:
       context: .
     ports:
       - '8777:40000'
-    volumes:
-      - ./Score/:/app/
+
