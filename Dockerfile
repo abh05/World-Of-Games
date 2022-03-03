@@ -1,5 +1,5 @@
 FROM python:alpine
 RUN pip install flask
 WORKDIR /app
-COPY ..
+COPY . .
 CMD python Score/MainScores.py
