@@ -1,4 +1,4 @@
---upgrade pip
+upgrade pip
 flask
 selenium>=4.1.0
 CurrencyConverter
