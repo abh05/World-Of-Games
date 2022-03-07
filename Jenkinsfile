@@ -12,7 +12,7 @@ pipeline {
                 sh 'sudo docker-compose build'
             }
         }
-        stage('Build') {
+        stage('Run') {
             steps {
                echo 'Running the container image...'
                echo 'Making a dummy score file'
