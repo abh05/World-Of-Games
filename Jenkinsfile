@@ -20,9 +20,11 @@ pipeline {
                sh 'sudo docker cp Score.txt score-srv:/app'
             }
         }
-           stage('Test') {
+        stage('Test') {
             steps {
-                sh 'echo a'
+               echo 'testing the score server...'
+                 sh 'pip3 install -r requirements.txt'
+                 sh 'python3 Tests/e2e.py http://localhost:8777'
             }
         }
     }
