@@ -1,6 +1,8 @@
 version: '3'
 services:
-  flask-app:
+  score-srv:
     build: .
     ports:
       - '8777:40000'
+    container_name: score-srv
+
