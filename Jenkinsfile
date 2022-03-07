@@ -9,15 +9,15 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh 'echo \'{32}\' > scores.txt'
-                sh 'sudo docker-compose build'
+               sh 'sudo docker-compose build'
             }
         }
         stage('Run') {
             steps {
-               echo 'Running the container image...'
-               echo 'Making a dummy score file'
+               echo 'Running container image...'
+               sh 'echo \'{32}\' > scores.txt'
                sh 'sudo docker-compose down && sudo docker-compose up -d'
+               sh 'docker cp scores.txt score-srv:/app'
             }
         }
            stage('Test') {
