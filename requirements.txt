@@ -1,1 +1,1 @@
-selenium~=4.0.0a7
+selenium~=4.1.0
