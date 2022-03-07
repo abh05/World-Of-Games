@@ -1,8 +1,7 @@
-FROM  FROM python:3.7-alpine
+FROM  python:alpine
 WORKDIR /app
 COPY . .
-RUN pip install urllib3==1.22
-RUN pip3 install -U pip setuptools
+RUN pip install -U pip setuptools
 RUN pip3 install --upgrade pip
 RUN /usr/local/bin/python -m ensurepip --upgrade
 RUN /usr/local/bin/python -m pip install --upgrade pip
