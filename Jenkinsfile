@@ -27,7 +27,7 @@ pipeline {
                  sh 'python3 Tests/e2e.py http://localhost:8777'
             }
         }
-        stage('Finlizing') {
+        stage('Finalize') {
             steps {
                echo 'uploading docker'
             }
