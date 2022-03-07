@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Git Checkout') {
             steps {
-                properties([githubProjectProperty(displayName: '', projectUrlStr: 'https://github.com/abh05/World-Of-Games.git/')])
+                git 'https://github.com/abh05/World-Of-Games/'
             }
         }
         stage('Build') {
