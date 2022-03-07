@@ -10,7 +10,7 @@ pipeline {
         stage('Build') {
             steps {
                sh 'pip uninstall --yes urllib3'
-               sh 'pip install --yes urllib3==1.22'
+               sh 'pip install urllib3==1.22'
                sh 'sudo docker-compose build'
             }
         }
