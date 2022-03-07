@@ -1,4 +1,4 @@
-FROM  python:alpine
+FROM  python
 WORKDIR /app
 COPY . .
 RUN pip install -U pip setuptools

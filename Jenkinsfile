@@ -23,7 +23,7 @@ pipeline {
         stage('Test') {
             steps {
                echo 'testing the score server...'
-                 sh 'pip3 install -r requirements.txt'
+                 sh 'pip install -r requirements.txt'
                  sh 'python3 Tests/e2e.py'
             }
         }
