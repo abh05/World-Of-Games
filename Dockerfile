@@ -1,4 +1,4 @@
-FROM python:alpine3.15
+FROM  alpine
 WORKDIR /app
 COPY . .
 RUN apk add --no-cache gcc musl-dev linux-headers
