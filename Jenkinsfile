@@ -17,7 +17,7 @@ pipeline {
                echo 'Running the container image...'
                echo 'Making a dummy score file'
                sh 'echo \'{32}\' > dummy_scores.txt'
-               sh 'sudo docker-compose down && docker-compose up -d'
+               sh 'sudo docker-compose down && docker-compose up'
                sh 'docker-compose cp dummy_scores.txt score-srv:scores.txt'
             }
         }
