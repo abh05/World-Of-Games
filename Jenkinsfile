@@ -17,7 +17,7 @@ pipeline {
                echo 'Running container image...'
                sh 'echo \'{32}\' > scores.txt'
                sh 'sudo docker-compose down && sudo docker-compose up -d'
-               sh 'docker cp scores.txt score-srv:/app'
+               sh 'sudo docker cp scores.txt score-srv:/app'
             }
         }
            stage('Test') {
