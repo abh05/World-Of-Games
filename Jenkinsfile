@@ -27,10 +27,10 @@ pipeline {
                  sh 'python3 Tests/e2e.py http://localhost:8777'
             }
         }
-        stage('Finalize') {
+        stage('Finlizing') {
             steps {
-               echo 'Push image'
-               sh 'docker-compose push'
-               sh 'docker-compose down --rmi all'
+               echo 'uploading docker'
+            }
+        }
     }
 }
