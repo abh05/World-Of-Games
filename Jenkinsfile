@@ -9,6 +9,7 @@ pipeline {
         }
         stage('Build') {
             steps {
+               sh 'pip3 install --upgrade requests'
                sh 'sudo docker-compose build'
             }
         }
