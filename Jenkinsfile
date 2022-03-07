@@ -19,7 +19,6 @@ pipeline {
                sh 'echo \'{32}\' > dummy_scores.txt'
                sh 'docker-compose up'
                sh 'docker-compose cp dummy_scores.txt score-srv:scores.txt'
-               sh 'docker-compose build'
             }
         }
            stage('Test') {
