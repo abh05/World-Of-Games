@@ -25,7 +25,8 @@ pipeline {
         stage('Test') {
             steps {
                echo 'testing the score server...'
-                 sh 'pip install -r requirements.txt'
+                 sh ''
+                 sh 'pip3 install -r requirements.txt'
                  sh 'python3 Utils\\e2e.py'
             }
         }
