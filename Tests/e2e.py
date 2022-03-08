@@ -22,5 +22,5 @@ def main_function():
         print("test Failed")
         return exit(1)
 
-if __name__ == '__main__':
-    print(main_function())
+
+print(main_function())
