@@ -1,5 +1,5 @@
 from selenium import webdriver
-
+from sys import exit
 
 def est_scores_service():
     driverCH = webdriver.Chrome(executable_path="C:\\Users\\avi\\Desktop\\chromedriver.exe")
@@ -16,6 +16,8 @@ def est_scores_service():
 def main_function():
     test_result = est_scores_service()
     if test_result is True:
-        return 0
+        print("test Passed")
+        return exit(0)
     else:
-        return -1
+        print("test Failed")
+        return exit(1)
