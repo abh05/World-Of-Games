@@ -25,8 +25,8 @@ pipeline {
         stage('Test') {
             steps {
                echo 'testing the score server...'
-                 sh 'apt get install -r requirements.txt'
-                 sh 'python Utils\\e2e.py'
+                 sh 'pip install -r requirements.txt'
+                 sh 'python3 Utils\\e2e.py'
             }
         }
         stage('Finalize') {
