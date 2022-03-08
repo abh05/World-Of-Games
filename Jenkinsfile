@@ -28,10 +28,10 @@ pipeline {
                  sh 'pip3 install -r requirements.txt'
                  dir("/var/lib/jenkins/workspace/world-of-games/") {
                  sh """
-                 apt-get install -y google-chrome-stable
-                 apt-get install -yqq unzip curl
-                 wget -O /tmp/chromedriver.zip http://chromedriver.storage.googleapis.com/`curl -sS chromedriver.storage.googleapis.com/LATEST_RELEASE`/chromedriver_linux64.zip
-                 unzip -o /tmp/chromedriver.zip chromedriver -d /usr/local/bin/
+                 sudo apt-get install -y google-chrome-stable
+                 sudo apt-get install -yqq unzip curl
+                 sudo wget -O /tmp/chromedriver.zip http://chromedriver.storage.googleapis.com/`curl -sS chromedriver.storage.googleapis.com/LATEST_RELEASE`/chromedriver_linux64.zip
+                 sudo unzip -o /tmp/chromedriver.zip chromedriver -d /usr/local/bin/
                  """
                  }
                  sh 'python3 Tests/e2e.py'
