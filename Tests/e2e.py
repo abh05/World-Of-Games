@@ -2,7 +2,7 @@ from selenium import webdriver
 from sys import exit
 
 def est_scores_service():
-    driverCH = webdriver.Chrome(executable_path="chromedriver")
+    driverCH = webdriver.Chrome(executable_path="./chromedriver")
     driverCH.get("http://localhost:40000/score")
     driverCH.maximize_window()
     getnum = driverCH.find_element_by_xpath('/html/body/h3')
