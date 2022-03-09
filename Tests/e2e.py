@@ -1,6 +1,7 @@
 from selenium import webdriver
 from sys import exit
 
+
 def test_scores_service():
     driverCH = webdriver.Chrome('/chromedriver')
     driverCH.get("http://localhost:40000/score")
