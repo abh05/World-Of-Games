@@ -1,7 +1,7 @@
 from selenium import webdriver
 from sys import exit
 
-def est_scores_service():
+def test_scores_service():
     driverCH = webdriver.Chrome('/chromedriver')
     driverCH.get("http://localhost:40000/score")
     driverCH.maximize_window()
@@ -14,7 +14,7 @@ def est_scores_service():
 
 
 def main_function():
-    test_result = est_scores_service()
+    test_result = test_scores_service()
     if test_result is True:
         print("test Passed")
         return exit(0)
