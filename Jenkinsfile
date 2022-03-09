@@ -26,17 +26,6 @@ pipeline {
             steps {
                echo 'testing the score server...'
                  sh 'pip3 install -r requirements.txt'
-                 dir("/var/lib/jenkins/workspace/world-of-games/") {
-                 sh """
-                 sudo curl -sS -o - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add
-                 sudo bash -c "echo 'deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main' >> /etc/apt/sources.list.d/google-chrome.list"
-                 sudo apt -y update
-                 sudo apt -y install google-chrome-stable
-                 sudo apt-get install -yqq unzip curl
-                 sudo wget -O /tmp/chromedriver.zip http://chromedriver.storage.googleapis.com/`curl -sS chromedriver.storage.googleapis.com/LATEST_RELEASE`/chromedriver_linux64.zip
-                 sudo unzip -o /tmp/chromedriver.zip chromedriver -d /usr/local/bin/
-                 """
-                 }
                  sh 'python3 Tests/e2e.py'
             }
         }
