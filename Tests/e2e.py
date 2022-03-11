@@ -3,7 +3,7 @@ from sys import exit
 
 
 def test_scores_service():
-    driverCH = webdriver.Chrome('/chromedriver')
+    driverCH = webdriver.Chrome('chromedriver')
     driverCH.get("http://localhost:40000/score")
     driverCH.maximize_window()
     getnum = driverCH.find_element_by_xpath('/html/body/h3')
