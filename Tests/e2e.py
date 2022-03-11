@@ -9,7 +9,7 @@ chrome_options.add_argument('--disable-dev-shm-usage')
 
 
 def test_scores_service(driverCH):
-    driverCH.get("http://localhost:40000/score")
+    driverCH.get("http://localhost:8777/score")
     driverCH.maximize_window()
     getnum = driverCH.find_element_by_xpath('/html/body/h3')
     a = getnum.text
