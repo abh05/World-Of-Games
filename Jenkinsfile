@@ -32,7 +32,14 @@ pipeline {
             }
         }
         stage('Finalize') {
-            steps {
+            steps{
+                script {
+                       if (currentBuild.result == "FAILURE"){
+                            echo "The Test stage is fail. The Image didn`t pushed"
+                            currentStage.result = "FAILURE"
+            }
+        }
+        else{
                echo 'uploading docker'
             }
         }
