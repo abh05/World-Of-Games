@@ -27,7 +27,6 @@ pipeline {
                echo 'testing the score server...'
                  sh 'pip3 install -r requirements.txt'
                  sh 'sudo apt-get install chromium-chromedriver'
-                 sh 'sudo apt-get --reinstall install DevToolsActivePort'
                  sh 'python3 Tests/e2e.py'
             }
         }
