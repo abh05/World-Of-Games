@@ -23,10 +23,10 @@ def main_function():
     driverCH = webdriver.Chrome(executable_path='Tests/chromedriver', chrome_options=chrome_options)
     test_result = test_scores_service(driverCH)
     if test_result is True:
-        print("test Passed")
+        print("Test Passed")
         return exit(0)
     else:
-        print("test Failed")
+        print("Test Failed")
         return exit(1)
 
 
