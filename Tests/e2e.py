@@ -20,7 +20,7 @@ def test_scores_service(driverCH):
 
 
 def main_function():
-    driverCH = webdriver.Chrome(executable_path='/usr/bin/chromedriver', chrome_options=chrome_options)
+    driverCH = webdriver.Chrome(executable_path='/chromedriver', chrome_options=chrome_options)
     test_result = test_scores_service(driverCH)
     if test_result is True:
         print("test Passed")
