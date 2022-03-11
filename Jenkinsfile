@@ -27,7 +27,7 @@ pipeline {
                echo 'testing the score server...'
                  sh 'pip3 install -r requirements.txt'
                  sh 'sudo apt-get install chromium-chromedriver'
-                 sh 'chmod 777 Tests/e2e.py'
+                 sh 'chmod 777 Tests/chromedriver'
                  sh 'python3 Tests/e2e.py'
             }
         }
