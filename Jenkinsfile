@@ -17,7 +17,7 @@ pipeline {
         stage('Run') {
             steps {
                echo 'Running container image...'
-               sh 'echo \'32\' > Score.txt'
+               sh 'echo \'q\' > Score.txt'
                sh 'sudo docker-compose down && sudo docker-compose up -d'
                sh 'sudo docker cp Score.txt score-srv:/app'
             }
