@@ -3,7 +3,7 @@
 * [Demo](#Demo)
 * [Technologies](#technologies)
 * [Setup](#setup)
-* [CI/CD integration:](#CI/CD integration:)
+* [Setup](#setup)
 
 ## Introduction 
 'World Of Games' is a project which demonstrate 3 interactive user games:
