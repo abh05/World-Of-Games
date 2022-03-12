@@ -3,7 +3,7 @@
 * [Demo](#Demo)
 * [Technologies](#technologies)
 * [Setup](#setup)
-* [Setup](#setup)
+* [Continues integration](#Continues integration)
 
 ## Introduction 
 'World Of Games' is a project which demonstrate 3 interactive user games:
@@ -25,6 +25,7 @@ To run this project, Download it locally to your Pycharm IDE and Run:
 $ install python3
 
 $ Python3 MainGame.py
+
 ## Continues integration
 ![Alt text](CI_CD.gif)
 
