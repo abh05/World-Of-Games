@@ -2,7 +2,8 @@
 * [Introduction](#Introduction)
 * [Demo](#Demo)
 * [Technologies](#technologies)
-* [Continues integration](#continues integration)
+* [Setup](#setup)
+* [CI CD](#CI CD)
 
 
 ## Introduction 
@@ -26,8 +27,7 @@ $ install python3
 
 $ Python3 MainGame.py
 
-
-## Continues integration
+## CI CD
 ![Alt text](CI_CD.gif)
 
 ## Following stages are demonstrated in the Jenkins pipeline:
