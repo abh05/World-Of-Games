@@ -1,6 +1,5 @@
 pipeline {
     agent any
-
     stages {
         stage('Git Checkout') {
             steps {
@@ -17,7 +16,9 @@ pipeline {
         stage('Run') {
             steps {
                echo 'Running container image...'
+               sh 'echo \'32\' > Score.txt'
                sh 'sudo docker-compose down && sudo docker-compose up -d'
+               sh 'sudo docker cp Score.txt score-srv:/app'
             }
         }
         stage('Test Ubuntu 18.04') {
@@ -33,7 +34,7 @@ pipeline {
             }
             post {
                 failure {
-                    echo "Test Failed"
+                    echo "Test Failed - will not upload image"
                 }
             }
         }
