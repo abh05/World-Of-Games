@@ -23,12 +23,15 @@ pipeline {
         stage('Test Ubuntu 18.04') {
             steps {
                echo 'testing the score server...'
+               script {
+                 try {
                  sh 'pip3 install -r requirements.txt'
                  sh 'sudo apt-get install chromium-chromedriver=99.0.4844.51-0ubuntu0.18.04.1'
                  sh 'chmod 777 Tests/chromedriver'
                  sh 'python3 Tests/e2e.py'
-               script {
-                   echo "${currentBuild.currentResult}"
+                 } catch (Exception e) {
+                     echo "${currentBuild.currentResult}"
+                     echo "Test Failed"
                }
             }
         }
