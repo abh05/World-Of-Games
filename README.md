@@ -1,10 +1,9 @@
 ## Table of contents
-* [CI CD](#CI CD)
 * [Introduction](#Introduction)
 * [Demo](#Demo)
 * [Technologies](#technologies)
 * [Setup](#setup)
-
+* [Jenkins Demo](#Jenkins Demo)
 
 
 ## Introduction 
@@ -23,12 +22,10 @@ Project is created with:
 	
 ## Setup
 To run this project, Download it locally to your Pycharm IDE and Run:
+* install python3
+* Python3 MainGame.py
 
-$ install python3
-
-$ Python3 MainGame.py
-
-## CI CD
+## Jenkins Demo
 ![Alt text](CI_CD.gif)
 
 ## Following stages are demonstrated in the Jenkins pipeline:
