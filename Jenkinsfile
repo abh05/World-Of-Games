@@ -32,12 +32,12 @@ pipeline {
                }
             }
         }
-            post {
-                failure {
-                    echo 'Test Failed!'
-                }
+        post {
+            failure {
+                echo 'Test Failed!'
             }
         }
+    }
         stage('Finalize') {
             steps{
                 script {
