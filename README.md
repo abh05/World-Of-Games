@@ -3,7 +3,7 @@
 * [Demo](#Demo)
 * [Technologies](#technologies)
 * [Setup](#setup)
-* [Jenkins Demo](#Jenkins Demo)
+* [Jenkins Demo](#Demos)
 
 
 ## Introduction 
@@ -25,7 +25,7 @@ To run this project, Download it locally to your Pycharm IDE and Run:
 * install python3
 * Python3 MainGame.py
 
-## Jenkins Demo
+## Demos
 ![Alt text](CI_CD.gif)
 
 ## Following stages are demonstrated in the Jenkins pipeline:
