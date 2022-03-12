@@ -42,8 +42,8 @@ pipeline {
         stage('Finalize') {
             steps{
                  echo "upload image"
-                    sh 'docker stop score-srv'
-                    sh 'docker rm score-srv'
+                    sh 'sudo docker stop score-srv'
+                    sh 'sudo docker rm score-srv'
                  echo 'docker push <username/testjenkins_score-srv>'
             }
             post {
