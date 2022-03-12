@@ -3,7 +3,7 @@
 * [Demo](#Demo)
 * [Technologies](#technologies)
 * [Setup](#setup)
-* [Continues integration](#Continues integration)
+* [A](#A)
 
 ## Introduction 
 'World Of Games' is a project which demonstrate 3 interactive user games:
@@ -26,7 +26,7 @@ $ install python3
 
 $ Python3 MainGame.py
 
-## Continues integration
+## A
 
 ![Alt text](CI_CD.gif)
 
