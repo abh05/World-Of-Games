@@ -38,7 +38,7 @@ the tests.
 pipeline if the tests failed.
 5. *Finalize* - Will terminate our tested container and push to DockerHub the new image we created.
 
-## CI/CD integration requires the following prerequisites:
+## Continues integration requires the following prerequisites:
 For Jenkins to run all stages successfully
 * Master & Node on a Ubuntu 18.04 OS for POC
 * To avoid permission issues, you may add jenkins to the sudoers file (Jenkins ALL=(ALL) NOPASSWD: ALL)
