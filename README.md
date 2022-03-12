@@ -27,6 +27,7 @@ $ install python3
 $ Python3 MainGame.py
 
 ## Continues integration
+
 ![Alt text](CI_CD.gif)
 
 ## Following stages are demonstrated in the Jenkins pipeline:
