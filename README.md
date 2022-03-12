@@ -3,6 +3,7 @@
 * [Demo](#Demo)
 * [Technologies](#technologies)
 * [Setup](#setup)
+* [CI/CD integration](#CI/CD integration )
 
 ## Introduction 
 'World Of Games' is a project which demonstrate 3 interactive user games:
@@ -20,16 +21,12 @@ Project is created with:
 	
 ## Setup
 To run this project, Download it locally to your Pycharm IDE and Run:
-$ install python3 
-$ Python3 MainGame.py
 
-## CI/CD integration requires the following prerequisites:
-For Jenkins to run all stages successfully
-* Master & Node on a Ubuntu 18.04 OS for POC
-* To avoid permission issues, you may add jenkins to the sudoers file (Jenkins ALL=(ALL) NOPASSWD: ALL)
-* In the 'Tests' folder is the following chromedriver version: 99.0.4844.51-0ubuntu0.18.04.1
-* The version of Chrome that will be installed is 99.0.4844.51-0ubuntu0.18.04.1
-* 'Finalize - upload image' stage requires changing the 'echo' to 'sh' and adding your own credentials         
+$ install python3
+
+$ Python3 MainGame.py
+## CI/CD integration 
+![Alt text](CI_CD.gif)
 
 ## Following stages are demonstrated in the Jenkins pipeline:
 1. *Checkout* - repository checkout.
@@ -41,6 +38,13 @@ the tests.
 pipeline if the tests failed.
 5. *Finalize* - Will terminate our tested container and push to DockerHub the new image we created.
 
+## CI/CD integration requires the following prerequisites:
+For Jenkins to run all stages successfully
+* Master & Node on a Ubuntu 18.04 OS for POC
+* To avoid permission issues, you may add jenkins to the sudoers file (Jenkins ALL=(ALL) NOPASSWD: ALL)
+* In the 'Tests' folder is the following chromedriver version: 99.0.4844.51-0ubuntu0.18.04.1
+* The version of Chrome that will be installed is 99.0.4844.51-0ubuntu0.18.04.1
+* 'Finalize - upload image' stage requires changing the 'echo' to 'sh' and adding your own credentials         
 
 
 Enjoy :smile: 
