@@ -3,7 +3,7 @@
 * [Demo](#Demo)
 * [Technologies](#technologies)
 * [Setup](#setup)
-* [CI/CD](#CI/CD)
+* [CI/CD](#Continues Integration)
 
 
 ## Introduction 
@@ -25,7 +25,7 @@ To run this project, Download it locally to your Pycharm IDE and Run:
 * install python3
 * Python3 MainGame.py
 
-## CI/CD
+## Continues Integration
 ![Alt text](CI_CD.gif)
 
 ## Following stages are demonstrated in the Jenkins pipeline:
