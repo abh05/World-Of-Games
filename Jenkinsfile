@@ -38,6 +38,7 @@ pipeline {
                         error "Failed, exiting now..."
                     }
                 }
+            }
         }
         stage('Finalize') {
             steps{
