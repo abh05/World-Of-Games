@@ -1,9 +1,10 @@
 ## Table of contents
+* [CI CD](#CI CD)
 * [Introduction](#Introduction)
 * [Demo](#Demo)
 * [Technologies](#technologies)
 * [Setup](#setup)
-* [CI CD](#CI CD)
+
 
 
 ## Introduction 
