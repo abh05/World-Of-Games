@@ -1,6 +1,6 @@
 ## Table of contents
 * [Introduction](#Introduction)
-* [Demo](#Demo)
+* [Game Demo](#Game Demo)
 * [Technologies](#technologies)
 * [Setup](#setup)
 * [CI/CD](#CI/CD)
@@ -13,7 +13,7 @@ guess it back
 * *Guess Game* - guess a number and see if you chose like the computer
 * *Currency Roulette* - try and guess the value of a random amount of USD in ILS
 
-## Demo
+## Game Demo
 ![Alt text](Demo.gif)
 	
 ## Technologies
