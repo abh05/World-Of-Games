@@ -21,7 +21,7 @@ Project is created with:
 ## Setup
 To run this project, Download it locally to your Pycharm IDE and Run:
 
-$ MainGame.py
+$ Python3 MainGame.py
 
 ## CI/CD integration requires the following prerequisites:
 For Jenkins to run all stages successfully
