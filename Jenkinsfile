@@ -30,6 +30,7 @@ pipeline {
                  sh 'chmod 777 Tests/chromedriver'
                  sh 'python3 Tests/e2e.py'
             }
+        }
             post{
                 success {
                 }
