@@ -1,6 +1,6 @@
 ## Table of contents
 * [Introduction](#Introduction)
-* [Game Demo](#Game Demo)
+* [Demo](#Demo)
 * [Technologies](#technologies)
 * [Setup](#setup)
 * [CI/CD](#CI/CD)
