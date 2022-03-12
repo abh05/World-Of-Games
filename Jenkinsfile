@@ -28,7 +28,7 @@ pipeline {
                  sh 'chmod 777 Tests/chromedriver'
                  sh 'python3 Tests/e2e.py'
                script {
-                       if (currentBuild.result !== "SUCCESS"){
+                       if (currentBuild.result != "SUCCESS"){
                             echo "The Test stage is fail. The Image didn`t pushed"
                             currentStage.result = "FAILURE"
                        }
