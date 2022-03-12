@@ -41,12 +41,11 @@ pipeline {
         }
         stage('Finalize') {
             steps{
-                script {
-                       echo "upload image"
-                }
-                post {
-                    always {
-                        cleanWs()
+                 echo "upload image"
+            }
+            post {
+                always {
+                    cleanWs()
                 }
             }
         }
