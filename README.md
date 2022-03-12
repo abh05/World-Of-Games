@@ -23,5 +23,13 @@ To run this project, Download it locally to your Pycharm IDE and Run:
 
 $ MainGame.py
 
+## CI/CD integration prerequisites: 
+To successful Run All stages on Jenkins 
+* Master and Node installed on OS for POC: Ubuntu 18.04  
+* To Avoid permission issues Add jenkins to sudoers file: "jenkins ALL=(ALL) NOPASSWD: ALL"
+* chromedriver version supplied in 'Tests' Folder: 99.0.4844.51-0ubuntu0.18.04.1
+* Chrome version that will be installed: 99.0.4844.51-0ubuntu0.18.04.1
+
+
 
 Enjoy :smile: 
