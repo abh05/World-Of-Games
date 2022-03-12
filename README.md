@@ -3,7 +3,7 @@
 * [Demo](#Demo)
 * [Technologies](#technologies)
 * [Setup](#setup)
-* [Jenkins Demo](#CI/CD)
+* [CI/CD](#CI/CD)
 
 
 ## Introduction 
