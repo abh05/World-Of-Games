@@ -2,8 +2,8 @@
 * [Introduction](#Introduction)
 * [Demo](#Demo)
 * [Technologies](#technologies)
-* [Setup](#setup)
-* [A](#A)
+* [Continues integration](#Continues integration)
+
 
 ## Introduction 
 'World Of Games' is a project which demonstrate 3 interactive user games:
@@ -26,8 +26,8 @@ $ install python3
 
 $ Python3 MainGame.py
 
-## A
 
+## Continues integration
 ![Alt text](CI_CD.gif)
 
 ## Following stages are demonstrated in the Jenkins pipeline:
