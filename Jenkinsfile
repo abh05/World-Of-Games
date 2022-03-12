@@ -42,18 +42,11 @@ pipeline {
         stage('Finalize') {
             steps{
                 script {
-                       if (currentBuild.getPreviousBuild == "FAILURE"){
-                            echo "The Test stage is fail. The Image didn`t pushed"
-                            currentStage.result = "FAILURE"
-                       }
-                       else{
-                            echo "upload image"
-                       }
-                 }
-            }
-            post {
-                always {
-                    cleanWs()
+                       echo "upload image"
+                }
+                post {
+                    always {
+                        cleanWs()
                 }
             }
         }
