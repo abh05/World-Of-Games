@@ -31,7 +31,14 @@ pipeline {
         }
         stage('Finalize') {
             steps{
-                    echo 'ss'
+                script {
+                       if (currentBuild.result == "FAILURE"){
+                            echo "The Test stage is fail. The Image didn`t pushed"
+                            currentStage.result = "FAILURE"
+                       }
+                       else{
+                            echo "upload image"
+                       }
                  }
             }
             post {
