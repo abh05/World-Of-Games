@@ -6,14 +6,14 @@ pipeline {
                 git 'https://github.com/abh05/World-Of-Games.git'
             }
         }
-        stage('Build') {
+        stage('Build Image testjenkins_score-srv') {
             steps {
                sh 'pip uninstall --yes urllib3'
                sh 'pip install urllib3==1.22'
                sh 'sudo docker-compose build'
             }
         }
-        stage('Run') {
+        stage('Run container image') {
             steps {
                echo 'Running container image...'
                sh 'echo \'32\' > Score.txt'
@@ -21,7 +21,7 @@ pipeline {
                sh 'sudo docker cp Score.txt score-srv:/app'
             }
         }
-        stage('Test Ubuntu 18.04') {
+        stage('Score-srv Selenium Test on Ubuntu 18.04') {
             steps {
                echo 'testing the score server...'
                  sh 'pip3 install -r requirements.txt'
@@ -39,7 +39,7 @@ pipeline {
                 }
             }
         }
-        stage('Finalize') {
+        stage('Finalize upload image to Docker-Hub and delete container') {
             steps{
                  echo "upload image"
                     sh 'sudo docker stop score-srv'
