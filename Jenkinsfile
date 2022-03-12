@@ -29,6 +29,14 @@ pipeline {
                  sh 'python3 Tests/e2e.py'
             }
         }
+        post{
+        success {
+        }
+        failure }
+            script{
+                error "exit 1 Tests Failed, exiting now... "
+            }
+        }
         stage('Finalize') {
             steps{
                 script {
