@@ -37,7 +37,6 @@ pipeline {
                 echo 'Test Failed!'
             }
         }
-    }
         stage('Finalize') {
             steps{
                 script {
