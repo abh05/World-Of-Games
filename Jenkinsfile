@@ -30,9 +30,8 @@ pipeline {
                  sh 'chmod 777 Tests/chromedriver'
                  sh 'python3 Tests/e2e.py'
                script {
-                   currentBuild.result = 'FAILURE'
+                   echo "${currentBuild.currentResult}"
                }
-               echo "RESULT: ${currentBuild.result}"
             }
         }
         stage('Finalize') {
