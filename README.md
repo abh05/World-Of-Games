@@ -21,22 +21,22 @@ Project is created with:
 * Python 3.10
 	
 ## Setup
-To run this project, Download it locally to your Pycharm IDE and Run:
+To run this project, Download it locally to your Pycharm IDE/Linux OS:
 * install python3
-* Python3 MainGame.py
+* Run Python3 MainGame.py
 
 ## CI/CD
 ![Alt text](CI_CD.gif)
 
 ## Following stages are demonstrated in the Jenkins pipeline:
-1. *Checkout* - repository checkout.
-2. *Build* - build our docker image.
-3. *Run* - will run our dockerized application. The application will expose the port 8777 on
+1. **Checkout** - repository checkout.
+2. **Build** - build our docker image.
+3. **Run** - will run our dockerized application. The application will expose the port 8777 on
 localhost, and a dummy Scores.txt will be mounted to it in order to server the results for
 the tests.
-4. *Test* - With our e2e.py file it will selenium test our scores web service and fail the
+4. **Test** - With our e2e.py file it will selenium test our scores web service and fail the
 pipeline if the tests failed.
-5. *Finalize* - Will terminate our tested container and push to DockerHub the new image we created.
+5. **Finalize** - Will terminate our tested container and push to DockerHub the new image we created.
 
 ## Continues integration requires the following prerequisites:
 For Jenkins to run all stages successfully
