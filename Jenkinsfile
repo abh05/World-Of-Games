@@ -31,10 +31,10 @@ pipeline {
                    echo "${currentBuild.currentResult}"
                }
             }
-        }
-        post {
-            failure {
-                echo 'Test Failed!'
+            post {
+                failure {
+                    echo "Test Failed"
+                }
             }
         }
         stage('Finalize') {
