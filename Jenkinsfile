@@ -21,9 +21,9 @@ pipeline {
                sh 'sudo docker cp Score.txt score-srv:/app'
             }
         }
-        stage('Score-srv Selenium Test on Ubuntu 18.04') {
+        stage('Run Test') {
             steps {
-               echo 'testing the score server...'
+               echo 'testing the score server using selenium'
                  sh 'pip3 install -r requirements.txt'
                  sh 'sudo apt-get install chromium-chromedriver=99.0.4844.51-0ubuntu0.18.04.1'
                  sh 'chmod 777 Tests/chromedriver'
@@ -39,9 +39,9 @@ pipeline {
                 }
             }
         }
-        stage('Finalize upload image to Docker-Hub and delete container') {
+        stage('Finalize - upload image') {
             steps{
-                 echo "upload image"
+                 echo "upload image to Docker-Hub and delete container"
                     sh 'sudo docker stop score-srv'
                     sh 'sudo docker rm score-srv'
                  echo 'docker push <username/testjenkins_score-srv>'
