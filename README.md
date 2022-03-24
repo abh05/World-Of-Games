@@ -6,14 +6,22 @@
 * [CI/CD](#CI/CD)
 
 
-## Introduction 
-'World Of Games' is a project which demonstrate 3 interactive user games:
+## Intro 
+"World of Games" is an example project created during DevOps training courses. It demonstrates Python coding, working with Flask, HTML page creation and publishing, managing git/github repositories, and Jenkins CI/CD.
+
+There are three mini-games, a flask app, and a Selenium testing framework included in this project.
+
+There are folders for the games, tests, and scores, A docker, a docker-compose, and a Jenkins file are also present along with pipeline build information.
+The pipeline itself included containerizing the flask application, deploying it using docker-compose and running a test using Selenium.
+This pipeline was tested using Ubuntu 18.04.
+
+Using the mini-games CLI gaming platform in Python, players can choose and play a command line based game: 
 * *Memory Game* - a sequence of numbers will appear for 1 second and you have to
 guess it back
 * *Guess Game* - guess a number and see if you chose like the computer
 * *Currency Roulette* - try and guess the value of a random amount of USD in ILS
 
-## Demo
+## Guess Game Demo
 ![Alt text](Demo.gif)
 	
 ## Technologies
