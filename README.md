@@ -1,5 +1,5 @@
 ## Table of contents
-* [Introduction](#Intro)
+* [Intro](#Intro)
 * [Demo](#Demo)
 * [Technologies](#technologies)
 * [Setup](#setup)
