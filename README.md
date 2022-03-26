@@ -7,15 +7,31 @@
 
 
 ## Intro 
-"World of Games" is an example project created during DevOps training courses. It demonstrates Python coding, working with Flask, HTML page creation and publishing, managing git/github repositories, and Jenkins CI/CD.
+In a DevOps training course, "World of Games" served as an example project.  
 
-There are three mini-games, a flask app, and a Selenium testing framework included in this project.
+The project illustrates the DevOps lifecycle by demonstrating integration between development and operations. 
 
-There are folders for the games, tests, and scores, A docker, a docker-compose, and a Jenkins file are also present along with pipeline build information.
-The pipeline itself included containerizing the flask application, deploying it using docker-compose and running a test using Selenium.
-This pipeline was tested using Ubuntu 18.04.
+As for the development part, I created the following two applications using Python coding:  
 
-Using the mini-games CLI gaming platform in Python, players can choose and play a command line based game: 
+Gaming platform that allows players to play a command line game of their choice 
+
+A Flask web server application and HTML page for publishing the player's score  
+
+The player will need to select a game and difficulty level. To display the HTML web page, a Python flask module is used. Once running, you can access it from: 127.0.0.1:4000. 
+
+The operations side includes managing the applications code in git/github repositories and running it in a Jenkins Pipeline using Jenkins files to create stages, Docker (and Docker-compose) to package the Flask Web app into a container, and Selenium tests to test the games score. 
+
+## Environment and requirements:
+* Ubuntu 18.04 was used as the operating system for Jenkins master and testing node.
+* Python 3.10
+* Jenkins and Docker are needed to run the testing pipeline
+* Flask (will be installed in by the dockerfile)
+    ###installed Via Dockerfile and JenkinsFile:
+* Selenium (will be installed on the node)
+* In the 'Tests' folder is the following chromedriver version: 99.0.4844.51-0ubuntu0.18.04.1
+* The version of Chrome that will be installed is 99.0.4844.51-0ubuntu0.18.04.1
+
+3 mini-games CLI gaming contains: 
 * *Memory Game* - a sequence of numbers will appear for 1 second and you have to
 guess it back
 * *Guess Game* - guess a number and see if you chose like the computer
@@ -23,10 +39,6 @@ guess it back
 
 ## Guess Game Demo
 ![Alt text](Demo.gif)
-	
-## Technologies
-Project is created with:
-* Python 3.10
 	
 ## Setup
 To run this project, Download it locally to your Pycharm IDE/Linux OS:
@@ -49,9 +61,7 @@ pipeline if the tests failed.
 ## Continues integration requires the following prerequisites:
 For Jenkins to run all stages successfully
 * Master & Node on a Ubuntu 18.04 OS for POC
-* To avoid permission issues, you may add jenkins to the sudoers file (Jenkins ALL=(ALL) NOPASSWD: ALL)
-* In the 'Tests' folder is the following chromedriver version: 99.0.4844.51-0ubuntu0.18.04.1
-* The version of Chrome that will be installed is 99.0.4844.51-0ubuntu0.18.04.1
+* To avoid permission issues, you may add user 'jenkins' to the sudoers file (Jenkins ALL=(ALL) NOPASSWD: ALL)
 * 'Finalize - upload image' stage requires changing the 'echo' to 'sh' and adding your own credentials         
 
 
