@@ -5,6 +5,8 @@ DevOps lifecycle by demonstrating integration between development and operations
 
 <img src="https://www.iar.com/contentassets/b67c5b43d8c049078be75585aca983a2/cicd-pipelines_devops.png" width="250">
 
+<h4 dir="auto"><br /><img src="/contentassets/b67c5b43d8c049078be75585aca983a2/cicd-pipelines_devops.png" alt="cicd-pipelines_devops.png">/></a>&nbsp;&nbsp;</h4>
+
 As for the development part, I created the following two applications using Python coding:  
 * Gaming platform that allows players to play a command line game of their choice 
 * A Flask web server application and HTML page for publishing the player's score  
@@ -30,9 +32,9 @@ guess it back
 * *Guess Game* - guess a number and see if you chose like the computer
 * *Currency Roulette* - try and guess the value of a random amount of USD in ILS
     # Guess Game Demo
-![Alt text](Demo.gif)
-    # Setup
-To run this games, Download it locally to your Pycharm IDE/Linux OS:
+![Alt text](Demo.gif) 
+# Setup
+* running this games require download it locally to your Pycharm IDE/Linux OS:
 * install python3
 * Run Python3 MainGame.py
 
