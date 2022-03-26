@@ -8,7 +8,7 @@ DevOps lifecycle by demonstrating integration between development and operations
 As for the development part, I created the following two applications using Python coding:  
 * Gaming platform that allows players to play a command line game of their choice 
 * A Flask web server application and HTML page for publishing the player's score  
-The player will need to select a game and difficulty level. To display the HTML web page, a Python flask module is used. Once running, you can access it from: 127.0.0.1:4000.
+The player will need to select a game and difficulty level. To display the HTML web page, a Python flask module is used. Once running, you can access it from: 127.0.0.1:8777
 
 The operations side includes managing the applications code in git/github repositories and running it in a Jenkins Pipeline using Jenkins files to create stages, Docker (and Docker-compose) to package the Flask Web app into a container, and Selenium tests to test the games score. 
 
@@ -18,7 +18,7 @@ The operations side includes managing the applications code in git/github reposi
 * Jenkins and Docker are needed to run the testing pipeline
   ### installed Via Dockerfile and JenkinsFile:
 * Selenium (will be installed on the node)
-* Flask (will be installed in by the dockerfile)
+* Flask (will be installed  by the dockerfile)
 * In the 'Tests' folder is the following chromedriver version: 99.0.4844.51-0ubuntu0.18.04.1
 * The version of Chrome that will be installed is 99.0.4844.51-0ubuntu0.18.04.1
 
