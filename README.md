@@ -1,9 +1,9 @@
 ## Table of contents
 * [Intro](#Intro)
-* [Demo](#Demo)
-* [Technologies](#technologies)
-* [Setup](#setup)
-* [CI/CD](#CI/CD)
+* [Environment and requirements:](#Environment and requirements:)
+* [CLI mini-games contains](#CLI mini-games contains)
+* [Continues integration](#Continues integration)
+* [Continues integration requires the following prerequisites:](#Continues integration requires the following prerequisites:)
 
 
 ## Intro 
@@ -43,7 +43,7 @@ To run this games, Download it locally to your Pycharm IDE/Linux OS:
 
 ## Continues integration
     # Following stages are demonstrated in the Jenkins pipeline:
-1. **Checkout** - repository checkout.
+1. **Checkout** - GitHub code repository checkout.
 2. **Build** - build our docker image.
 3. **Run** - will run our dockerized application. The application will expose the port 8777 on
 localhost, and a dummy Scores.txt will be mounted to it in order to server the results for
@@ -58,6 +58,8 @@ pipeline if the tests failed.
 For Jenkins to run all stages successfully
 * Master & Node on a Ubuntu 18.04 OS for POC
 * To avoid permission issues, you may add user 'jenkins' to the sudoers file (Jenkins ALL=(ALL) NOPASSWD: ALL)
-* in the 'Finalize - upload image' stage requires changing the 'echo' to 'sh' and adding your own credentials         
+* in the 'Finalize - upload image' stage:  
+  * to push the build image to your own docker hub you will need to provide credentials and incorporate them in your own Jenkins system
+  * code requires changing the 'echo' to 'sh' and adding your own credentials         
 
 Enjoy :smile: 
