@@ -1,6 +1,6 @@
 FROM  python
 WORKDIR /app
-COPY . .
+COPY ./Score/ .
 RUN pip install flask
 RUN pip install CurrencyConverter
-CMD python Score/MainScores.py
+CMD python MainScores.py
