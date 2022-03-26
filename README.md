@@ -1,7 +1,9 @@
 
 ## World Of Games (WoG) 
-In a DevOps training course, "World of Games" served as an example project which illustrates the
+As a part of DevOps training course, "World of Games" served as an example project which illustrates the
 DevOps lifecycle by demonstrating integration between development and operations. 
+
+<img src="https://www.iar.com/contentassets/b67c5b43d8c049078be75585aca983a2/cicd-pipelines_devops.png" width="250">
 
 As for the development part, I created the following two applications using Python coding:  
 * Gaming platform that allows players to play a command line game of their choice 
