@@ -7,9 +7,8 @@
 
 
 ## Intro 
-In a DevOps training course, "World of Games" served as an example project.  
-
-The project illustrates the DevOps lifecycle by demonstrating integration between development and operations. 
+In a DevOps training course, "World of Games" served as an example project which illustrates the
+DevOps lifecycle by demonstrating integration between development and operations. 
 
 As for the development part, I created the following two applications using Python coding:  
 * Gaming platform that allows players to play a command line game of their choice 
