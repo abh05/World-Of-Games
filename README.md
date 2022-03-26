@@ -30,7 +30,7 @@ guess it back
 * *Guess Game* - guess a number and see if you chose like the computer
 * *Currency Roulette* - try and guess the value of a random amount of USD in ILS
     # Guess Game Demo
-![Alt text](Demo.gif) 
+![Alt text](DemoGame.gif) 
 ## Setup
 * running this games require download it locally to your Pycharm IDE/Linux OS:
 * install python3
