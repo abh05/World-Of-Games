@@ -16,9 +16,9 @@ The operations side includes managing the applications code in git/github reposi
 * Ubuntu 18.04 was used as the operating system for Jenkins master and testing node.
 * Python 3.10
 * Jenkins and Docker are needed to run the testing pipeline
-* Flask (will be installed in by the dockerfile)
   ### installed Via Dockerfile and JenkinsFile:
 * Selenium (will be installed on the node)
+* Flask (will be installed in by the dockerfile)
 * In the 'Tests' folder is the following chromedriver version: 99.0.4844.51-0ubuntu0.18.04.1
 * The version of Chrome that will be installed is 99.0.4844.51-0ubuntu0.18.04.1
 
