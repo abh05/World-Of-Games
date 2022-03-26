@@ -5,8 +5,6 @@ DevOps lifecycle by demonstrating integration between development and operations
 
 <img src="https://www.iar.com/contentassets/b67c5b43d8c049078be75585aca983a2/cicd-pipelines_devops.png" width="250">
 
-<h4 dir="auto"><br /><img src="/contentassets/b67c5b43d8c049078be75585aca983a2/cicd-pipelines_devops.png" alt="cicd-pipelines_devops.png">/></a>&nbsp;&nbsp;</h4>
-
 As for the development part, I created the following two applications using Python coding:  
 * Gaming platform that allows players to play a command line game of their choice 
 * A Flask web server application and HTML page for publishing the player's score  
