@@ -9,7 +9,7 @@ pipeline {
         stage('Build Image testjenkins_score-srv') {
             steps {
                sh 'pip uninstall --yes urllib3'
-               sh 'pip install urllib3==1.26.8'
+               sh 'pip install urllib3==1.22'
                sh 'sudo docker-compose build'
             }
         }
