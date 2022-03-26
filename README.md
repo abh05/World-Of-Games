@@ -1,12 +1,5 @@
-## Table of contents
-* [Intro](#Intro)
-* [Environment and requirements](#Environment and requirements)
-* [CLI mini-games contains](#CLI mini-games contains)
-* [Continues integration](#Continues integration)
-* [Continues integration requires the following prerequisites](#Continues integration requires the following prerequisites)
 
-
-## Intro 
+## World Of Games (WoG) 
 In a DevOps training course, "World of Games" served as an example project which illustrates the
 DevOps lifecycle by demonstrating integration between development and operations. 
 
