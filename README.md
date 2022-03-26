@@ -31,6 +31,8 @@ The operations side includes managing the applications code in git/github reposi
 * In the 'Tests' folder is the following chromedriver version: 99.0.4844.51-0ubuntu0.18.04.1
 * The version of Chrome that will be installed is 99.0.4844.51-0ubuntu0.18.04.1
 
+<h4 dir="auto"><br /><img src="https://i.imgur.com/WwHRFqj.png" alt="Python3 logo" width="70" height="70" /><img src="https://i.imgur.com/clK7pJU.png" alt="Jenkins Logo" width="80" height="75" /></a><a target="_blank" rel="noopener"><img src="https://i.imgur.com/APqDECw.png" alt="docker logo" width="98" height="70" /></a>&nbsp;<a href="https://docs.docker.com/compose/install/" target="_blank" rel="noopener"><img src="https://i.imgur.com/XfIX6nv.png" alt="Docker Compose logo" width="55" height="70" /></a>&nbsp;&nbsp;<a href="https://www.selenium.dev/downloads/" target="_blank" rel="noopener"><img src="https://i.imgur.com/Nbh6NjT.png" alt="Selenium Logo" width="70" height="70" /></a>&nbsp;&nbsp;<a href="https://flask.palletsprojects.com/en/2.0.x/installation/" rel="nofollow"><img src="https://camo.githubusercontent.com/fa8480c7180ec64d6230a08277f12c6e477d55690f4acb00c73d50ce84b65237/68747470733a2f2f666c61736b2e70616c6c65747370726f6a656374732e636f6d2f656e2f322e302e782f5f696d616765732f666c61736b2d6c6f676f2e706e67" alt="Flask Logo" width="141" height="55" /></a>&nbsp;&nbsp;</h4>
+
 3 mini-games CLI gaming contains: 
 * *Memory Game* - a sequence of numbers will appear for 1 second and you have to
 guess it back
