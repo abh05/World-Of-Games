@@ -10,7 +10,7 @@ As for the development part, I created the following two applications using Pyth
 * A Flask web server application and HTML page for publishing the player's score  
 The player will need to select a game and difficulty level. To display the HTML web page, a Python flask module is used. Once running, you can access it from: 127.0.0.1:8777
 
-The operations side includes managing the applications code in git/github repositories and running it in a Jenkins Pipeline using Jenkins files to create stages, Docker (and Docker-compose) to package the Flask Web app into a container, and Selenium tests to test the games score. 
+The operations side includes managing the applications code in git/github repositories and running it in a Jenkins Pipeline using Jenkins files to create stages, Docker (and Docker-compose) to package the Flask Web app into a container, and Selenium tests to test the score game website. 
 
 ## Environment and requirements:
 * Ubuntu 18.04 was used as the operating system for Jenkins master and testing node.
