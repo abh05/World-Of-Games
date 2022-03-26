@@ -1,9 +1,9 @@
 ## Table of contents
 * [Intro](#Intro)
-* [Environment and requirements:](#Environment and requirements:)
+* [Environment and requirements](#Environment and requirements)
 * [CLI mini-games contains](#CLI mini-games contains)
 * [Continues integration](#Continues integration)
-* [Continues integration requires the following prerequisites:](#Continues integration requires the following prerequisites:)
+* [Continues integration requires the following prerequisites](#Continues integration requires the following prerequisites)
 
 
 ## Intro 
